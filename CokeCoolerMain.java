@@ -9,8 +9,8 @@ public class CokeCoolerMain {
         c1.drink(2);
         c1.drink(3);
         
-        System.err.println(c.cokeCount());
-        System.err.println(c1.cokeCount());
+        System.out.println(c.cokeCount());
+        System.out.println(c1.cokeCount());
 
     }
 }
