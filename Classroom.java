@@ -36,4 +36,12 @@ public class Classroom{
     public void setStudents(int amt){
         this.numStudents = amt;
     }
+    public void printState(){ 
+        System.out.println(  "teacher:" + teacherName );
+        System.out.println(  "desks:" + numDesks );
+        System.out.println(  "students:" + numStudents );
+    
+
+    }
+    
 }
