@@ -1,6 +1,7 @@
 public class Refillable {
     private int amount;
-
+    private int totalUse;
+    private int totalTimeUsedHappens;
     public Refillable(){
         amount = 10;
         
@@ -10,6 +11,8 @@ public class Refillable {
     }
     public void useUp (int amt){
         amt-= amt;
+        totalUse += amt;
+        totalTimeUsedHappens ++;
     }
     public void addTo (int amt){
         amt += amt;
@@ -17,6 +20,9 @@ public class Refillable {
     public int refillableCount(){
         return amount;
     }
+    public double averageUse(){
+        return 1.0 * totalUse / totalTimeUsedHappens ;
 
+    }
     }
 
